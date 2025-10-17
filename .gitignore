@@ -1,0 +1,15 @@
+# 忽略所有数据文件
+data/
+
+# 忽略所有YOLO的输出结果
+# 我们只上传最终的模型，而不是整个训练过程
+runs/
+
+results/
+
+# 忽略所有Python缓存文件
+__pycache__/
+*.pyc
+
+# 忽略所有Conda环境文件
+.conda/
