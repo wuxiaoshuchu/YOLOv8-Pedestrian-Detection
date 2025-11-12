@@ -13,13 +13,13 @@ def main():
     project_root = Path(__file__).parent.parent
     
     # 使用我们训练好的多类别模型
-    model_path = project_root / "runs/detect/yolov8m_bdd100k_FIXED_v15/weights/best.pt" # 请确保这是您正确的模型路径！
+    model_path = project_root / "runs/detect/yolov8m_final_tuning_v4/weights/best.pt" # 请确保这是您正确的模型路径！
     
     # 输入视频路径 (和之前一样)
-    input_video_path = project_root / "data/raw/tokyo_drive_clip.mov" 
+    input_video_path = project_root / "data/raw/13142111_2160_3840_30fps.mp4" 
     
     # 定义保存追踪结果的输出视频路径
-    output_video_path = project_root / "results/tokyo_drive_V15_FIXED_output.mp4"
+    output_video_path = project_root / "results/china_traffic_tracking_PENN_MODEL_output.mp4"
     output_video_path.parent.mkdir(exist_ok=True)
 
     # --- 2. 加载模型 ---
